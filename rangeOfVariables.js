@@ -1,21 +1,21 @@
 var firstName = "Olayinka"; // Global Variable
 var age = 60; // Global Variable 
-var hobby = "Swimming";
+var hobby = "Swimming"; //Global Variables
 
 // console.log(firstName, age, hobby, "Initial values")
 
 //Declared Function
 function x() {
-    var firstName = "Famutimi" //Declaration and initialization
-    var age = 50;
+    // var firstName = "Famutimi" //Declaration and initialization
+    // var age = 50;
     hobby = "Running" //Overrides the global variables
     
-    // console.log(firstName, age, hobby, "Inside Function")
+    console.log(firstName, age, hobby, "Inside Function")
 
 }
 
 // Caling functions
-x()
+// x()
 
 // console.log(firstName, age, hobby, "Outside Functions")
 
@@ -28,7 +28,7 @@ var a = [5, 10, 15, 20];
 
 
 // String 
-var stringValue = "Hello world"
+var stringValue = "Hello world";
 
 // Number 
 
@@ -39,7 +39,7 @@ var numberValue = 10
 var boolValue = true;
 
 function doSomething (value) {
-    value = "Sometext"
+    value = "Some Word";
     console.log(value);
 }
 //Passing Variables by values and by reference!!!!
@@ -56,7 +56,7 @@ function someFunction (){
     return result;
 }
 
-console.log(someFunction())
+// console.log(someFunction())
 
 // x cannot be used outside
  
@@ -79,8 +79,8 @@ const addsEs6 = (x, y) => {
     return x + y;
 }
 
-console.log(addEs6())
-console.log(addsEs6(3,5))
+// console.log(addEs6())
+// console.log(addsEs6(3,5))
 
 
 // Spread Operator
@@ -98,21 +98,20 @@ let newCar = {
     ...car
 }
 
+console.log(car)
 console.log(newCar)
 
 
 // Rest operator
 const sum = (...args) => {
+    console.log(args)
     // args = [1,2,3,4,5,6,7,8,9,10,11,12,13] -Behind the scene...
-    let totalSum = 0;
-    for (let index = 0; index < args.length; index++) {
-        const element = args[index];
-        totalSum = totalSum + element;
-    }
-    return totalSum;
+    
 }
 
-console.log(sum(1,2,3,4,5,6,7,8,9,10,11,12,13))
+sum(1,2,3)
+
+// console.log(sum(1,2,3,4,5,6,7,8,9,10,11,12,13))
 
 
 

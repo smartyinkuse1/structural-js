@@ -1,5 +1,8 @@
 console.log("Hello World Callback!!!");
 
+// Declared Function
+// Called Function
+
 //Anonumous function
 var display = function (value) {
     console.log("The result is ",value);
